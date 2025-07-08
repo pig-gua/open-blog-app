@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.10:3306/open-blog
+    username: root
+    password: password
+  redis:
+    host: 192.168.0.10
+    port: 6379
+    password: password
+    database: 0
+  mail:
+    host: smtp.qq.com
+    username: 1234567890@qq.com
+    password: xxxxxxxxxx
+    port: 465
+    default-encoding: UTF-8
+    properties:
+      timeout: 5000
+      connection-timeout: 5000
+      write-timeout: 5000
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+            socketFactoryClass: javax.net.ssl.SSLSocketFactory
